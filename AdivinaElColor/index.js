@@ -17,19 +17,21 @@ function shuffle(array) {
 	}
 	return array;
 }
-
-var colorGanador = generarRGB();
+function generarGanador(){
+	var colorGanador = generarRGB();
+	return colorGanador;
+}
+colorGanador = generarGanador()
 document.getElementById('rgb').innerHTML = colorGanador;
 
 function pintarDeFondo(e){
-
-	const td = e.target;
-		if(td.style.backgroundColor == colorGanador){
-			console.log("Has ganado");
-		}
-		else{
-			td.style.backgroundColor = "white";
-		}
+	if(e.target.style.backgroundColor == colorGanador){
+		console.log("Has ganado");
+		finJuego();
+	}
+	else{
+		e.target.style.backgroundColor = "white";
+	}
 	
 }
 
@@ -56,10 +58,26 @@ function colorAlasCasillasEasy(){
 
 }
 
+function finJuego(){
+	document.getElementById("finjuego").style.backgroundColor = "grey";
+	document.getElementById('finjuego').innerHTML = "Has ganado!";
+
+	
+}
 
 function JugarHard() {
-
+	colorGanador = generarGanador()
+	document.getElementById('rgb').innerHTML = colorGanador;
 	colorAlasCasillasHard();
+	document.getElementById('finjuego').innerHTML = "";
+
+}
+function JugarEasy() {
+	colorGanador = generarGanador()
+	document.getElementById('rgb').innerHTML = colorGanador;
+	colorAlasCasillasEasy();
+	document.getElementById('finjuego').innerHTML = "";
+
 }
 
 JugarHard();
@@ -73,5 +91,6 @@ tds.forEach(td => {
 
 const hard = document.getElementById("hard");
 hard.addEventListener("click",JugarHard);
+
 const easy = document.getElementById("easy");
-easy.addEventListener("click",colorAlasCasillasEasy);
+easy.addEventListener("click",JugarEasy);
