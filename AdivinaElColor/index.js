@@ -30,7 +30,7 @@ function pintarDeFondo(e){
 		finJuego();
 	}
 	else{
-		e.target.style.backgroundColor = "white";
+		e.target.style.backgroundColor = "rgb(31, 31, 31)";
 	}
 	
 }
@@ -52,17 +52,18 @@ function colorAlasCasillasEasy(){
 	document.getElementById("casilla1").style.backgroundColor = ArrayColoresEasy[0];
 	document.getElementById("casilla2").style.backgroundColor = ArrayColoresEasy[1];
 	document.getElementById("casilla3").style.backgroundColor = ArrayColoresEasy[2];
-	document.getElementById("casilla4").style.backgroundColor = "white";
-	document.getElementById("casilla5").style.backgroundColor = "white";
-	document.getElementById("casilla6").style.backgroundColor = "white";
+	document.getElementById("casilla4").style.backgroundColor = "rgb(31, 31, 31)";
+	document.getElementById("casilla5").style.backgroundColor = "rgb(31, 31, 31)";
+	document.getElementById("casilla6").style.backgroundColor = "rgb(31, 31, 31)";
 
 }
 
 function finJuego(){
-	document.getElementById("finjuego").style.backgroundColor = "grey";
-	document.getElementById('finjuego').innerHTML = "Has ganado!";
-
-	
+	document.getElementById("finjuego").style.backgroundColor = "rgb(0, 234, 66)";
+	document.getElementById("finjuego").style.color = "white";
+	document.getElementById("finjuego").style.textAlign = "center";
+	document.getElementById("finjuego").style.marginBottom = "0";
+	document.getElementById('finjuego').innerHTML = "¡Has ganado!";	
 }
 
 function JugarHard() {
@@ -70,6 +71,8 @@ function JugarHard() {
 	document.getElementById('rgb').innerHTML = colorGanador;
 	colorAlasCasillasHard();
 	document.getElementById('finjuego').innerHTML = "";
+	document.getElementById("finjuego").style.backgroundColor = "rgb(31, 31, 31)";
+
 
 }
 function JugarEasy() {
@@ -77,6 +80,8 @@ function JugarEasy() {
 	document.getElementById('rgb').innerHTML = colorGanador;
 	colorAlasCasillasEasy();
 	document.getElementById('finjuego').innerHTML = "";
+	document.getElementById("finjuego").style.backgroundColor = "rgb(31, 31, 31)";
+
 
 }
 

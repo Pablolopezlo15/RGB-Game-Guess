@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Oswald';
 }
 header {
     width: 100%;
     background-color: rgb(0, 234, 66);
     text-align: center;
     border-bottom: 5px black solid;
+    color: white;
 }
 div table {
     display: flex;
@@ -21,17 +24,55 @@ div table td {
     background-color: grey;
 }
 nav {
-    padding: 2%;
+    border-top: 0;
     text-align: center;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
 
 }
-nav button{
-    padding: 0.5%;
-    border-radius: 50px ;
+nav div {
+    display: flex;
+}
+nav p:first-child {
+    justify-content: left; /* Alinea el primer elemento a la izquierda */
+}
+nav p {
+    margin-left: 10px;
 }
 
 
+#newcolors {
+    cursor: pointer;
+    color: rgb(0, 234, 66);
+    border-left: 2px black solid;
+    border-right: 2px black solid;
 
-main {
+}
+#newcolors:hover {
+    color: white;
+    background-color: rgb(0, 234, 66);
+}
+
+#easy,
+#hard {
+    cursor: pointer;
+    color: rgb(0, 234, 66);
+    padding: 2px;
+    border-left: 2px black solid;
+    border-right: 2px black solid;
+    
+}
+#easy:hover {
+    color: white;
+    background-color: rgb(0, 234, 66);
+}
+#hard:hover {
+    color: white;
+    background-color: rgb(0, 234, 66);
+}
+
+
+body {
     background-color: rgb(31, 31, 31);
 }
