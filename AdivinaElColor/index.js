@@ -28,6 +28,7 @@ function pintarDeFondo(e){
 	if(e.target.style.backgroundColor == colorGanador){
 		console.log("Has ganado");
 		finJuego();
+		
 	}
 	else{
 		e.target.style.backgroundColor = "rgb(31, 31, 31)";
@@ -72,8 +73,6 @@ function JugarHard() {
 	colorAlasCasillasHard();
 	document.getElementById('finjuego').innerHTML = "";
 	document.getElementById("finjuego").style.backgroundColor = "rgb(31, 31, 31)";
-
-
 }
 function JugarEasy() {
 	colorGanador = generarGanador()
