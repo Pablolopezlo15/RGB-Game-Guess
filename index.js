@@ -24,15 +24,17 @@ function generarGanador(){
 colorGanador = generarGanador()
 document.getElementById('rgb').innerHTML = colorGanador;
 
+
 function pintarDeFondo(e){
 	if(e.target.style.backgroundColor == colorGanador){
 		console.log("Has ganado");
 		finJuego();
-		
 	}
 	else{
 		e.target.style.backgroundColor = "rgb(31, 31, 31)";
 	}
+	
+
 	
 }
 
@@ -60,12 +62,28 @@ function colorAlasCasillasEasy(){
 }
 
 function finJuego(){
+	document.querySelector("footer").style.display = "flex"
+	document.querySelector("footer").style.justifyContent = "center"
 	document.getElementById("finjuego").style.backgroundColor = "rgb(0, 234, 66)";
+	document.getElementById("finjuego").style.width = "20%"
+	document.getElementById("finjuego").style.borderRadius = "50px"
 	document.getElementById("finjuego").style.color = "white";
 	document.getElementById("finjuego").style.textAlign = "center";
 	document.getElementById("finjuego").style.marginBottom = "0";
 	document.getElementById('finjuego').innerHTML = "¡Has ganado!";	
 }
+
+//function finJuegoPerdido(){
+//	document.querySelector("footer").style.display = "flex"
+//	document.querySelector("footer").style.justifyContent = "center"
+//	document.getElementById("finjuego").style.backgroundColor = "rgb(234, 0, 66)";
+//	document.getElementById("finjuego").style.width = "20%"
+//	document.getElementById("finjuego").style.borderRadius = "50px"
+//	document.getElementById("finjuego").style.color = "white";
+//	document.getElementById("finjuego").style.textAlign = "center";
+//	document.getElementById("finjuego").style.marginBottom = "0";
+//	document.getElementById('finjuego').innerHTML = "Has perdido :c";	
+//}
 
 function JugarHard() {
 	colorGanador = generarGanador()
@@ -73,14 +91,15 @@ function JugarHard() {
 	colorAlasCasillasHard();
 	document.getElementById('finjuego').innerHTML = "";
 	document.getElementById("finjuego").style.backgroundColor = "rgb(31, 31, 31)";
+
 }
+
 function JugarEasy() {
 	colorGanador = generarGanador()
 	document.getElementById('rgb').innerHTML = colorGanador;
 	colorAlasCasillasEasy();
 	document.getElementById('finjuego').innerHTML = "";
 	document.getElementById("finjuego").style.backgroundColor = "rgb(31, 31, 31)";
-
 
 }
 
