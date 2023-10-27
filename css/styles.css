@@ -34,11 +34,7 @@ nav div {
     display: flex;
 }
 nav p:first-child {
-<<<<<<< HEAD
-    justify-content: left;
-=======
     justify-content: left; 
->>>>>>> efc4e25ae538e28bd36dc8ccbeaaa3e85c652475
 }
 nav p {
     margin-left: 10px;
