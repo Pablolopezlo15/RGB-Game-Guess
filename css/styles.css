@@ -35,7 +35,7 @@ nav div {
     display: flex;
 }
 nav p:first-child {
-    justify-content: left; /* Alinea el primer elemento a la izquierda */
+    justify-content: left;
 }
 nav p {
     margin-left: 10px;
