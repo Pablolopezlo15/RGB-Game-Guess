@@ -70,7 +70,7 @@ function finJuego(){
 	document.getElementById("finjuego").style.color = "white";
 	document.getElementById("finjuego").style.textAlign = "center";
 	document.getElementById("finjuego").style.marginBottom = "0";
-	document.getElementById('finjuego').innerHTML = "¡Has ganado!";	
+	document.getElementById('finjuego').innerHTML = "Winner!";	
 }
 
 
