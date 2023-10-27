@@ -73,17 +73,6 @@ function finJuego(){
 	document.getElementById('finjuego').innerHTML = "¡Has ganado!";	
 }
 
-//function finJuegoPerdido(){
-//	document.querySelector("footer").style.display = "flex"
-//	document.querySelector("footer").style.justifyContent = "center"
-//	document.getElementById("finjuego").style.backgroundColor = "rgb(234, 0, 66)";
-//	document.getElementById("finjuego").style.width = "20%"
-//	document.getElementById("finjuego").style.borderRadius = "50px"
-//	document.getElementById("finjuego").style.color = "white";
-//	document.getElementById("finjuego").style.textAlign = "center";
-//	document.getElementById("finjuego").style.marginBottom = "0";
-//	document.getElementById('finjuego').innerHTML = "Has perdido :c";	
-//}
 
 function JugarHard() {
 	colorGanador = generarGanador()
