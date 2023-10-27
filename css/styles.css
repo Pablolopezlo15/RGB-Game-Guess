@@ -9,7 +9,6 @@ header {
     width: 100%;
     background-color: rgb(0, 234, 66);
     text-align: center;
-    border-bottom: 5px black solid;
     color: white;
 }
 div table {
@@ -35,7 +34,11 @@ nav div {
     display: flex;
 }
 nav p:first-child {
+<<<<<<< HEAD
     justify-content: left;
+=======
+    justify-content: left; 
+>>>>>>> efc4e25ae538e28bd36dc8ccbeaaa3e85c652475
 }
 nav p {
     margin-left: 10px;
@@ -45,8 +48,6 @@ nav p {
 #newcolors {
     cursor: pointer;
     color: rgb(0, 234, 66);
-    border-left: 2px black solid;
-    border-right: 2px black solid;
 
 }
 #newcolors:hover {
@@ -59,8 +60,7 @@ nav p {
     cursor: pointer;
     color: rgb(0, 234, 66);
     padding: 2px;
-    border-left: 2px black solid;
-    border-right: 2px black solid;
+
     
 }
 #easy:hover {
@@ -75,4 +75,17 @@ nav p {
 
 body {
     background-color: rgb(31, 31, 31);
+}
+
+div ul {
+    display: flex;
+    justify-content: center;
+
+}
+div ul li {
+    list-style: none;
+    padding: 1%;
+}
+div ul li img {
+    width: 5rem;
 }
